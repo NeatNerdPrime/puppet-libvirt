@@ -1,0 +1,7 @@
+
+# whitelist is_to_s, see: https://github.com/puppetlabs/pdk/issues/642
+.rubocop.yml:
+  default_configs:
+    Style/PredicateName:
+      NameWhitelist:
+        - is_to_s
