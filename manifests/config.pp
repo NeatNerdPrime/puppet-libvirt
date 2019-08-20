@@ -1,6 +1,9 @@
-# == Class: libvirt::config
 #
-# Installs configuration files
+# libvirt::config
+#
+# @summary Installs configuration files
+# 
+# @note parameter are inherited from ::libvirt and documented there.
 class libvirt::config (
   String  $qemu_hook        = $libvirt::qemu_hook,
   Hash    $qemu_conf        = $libvirt::qemu_conf,

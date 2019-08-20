@@ -4,11 +4,12 @@
 Puppet::Type.newtype(:libvirt_pool) do
   @doc = "Manages libvirt pools
 
-            Example :
+          @example 
               libvirt_pool { 'default' :
                 ensure => absent
               }
 
+          @example
               libvirt_pool { 'mydirpool' :
                 ensure    => present,
                 active    => true,
@@ -16,7 +17,7 @@ Puppet::Type.newtype(:libvirt_pool) do
                 type      => 'dir',
                 target    => '/tmp/mypool',
               }
-
+          @example
               libvirt_pool { 'mydirpool2' :
                 ensure       => present,
                 active       => true,

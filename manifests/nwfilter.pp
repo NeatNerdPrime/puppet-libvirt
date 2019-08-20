@@ -1,27 +1,25 @@
-# == Define: libvirt::nwfilter
+# libvirt::nwfilter
 #
-# Define a new libvirt nwfilter. The name of the nwfilter is
-# the resource name. It expects an ip address and will set up
-# firewalling that restricts inbound traffic to the given port
-# numbers.
+# @summary Define a new libvirt nwfilter. The name of the nwfilter is
+#   the resource name. It expects an ip address and will set up
+#   firewalling that restricts inbound traffic to the given port
+#   numbers.
 #
-# === Parameters:
-#
-# [*uuid*]
+# @param uuid
 #   The libvirt UUID, optional.
-# [*ip*]
+# @param ip
 #   The VM's IP address, mandatory.
-# [*publictcpservices*]
+# @param publictcpservices
 #   An array with portnumbers that should be accessible over
 #   TCP from anywhere
-# [*publicudpservices*]
+# @param publicudpservices
 #   An array with portnumbers that should be accessible over
 #   UDP from anywhere
-# [*customtcprules*]
+# @param customtcprules
 #   An array with rules that allow traffic to a specific TCP
 #   port from a specific address. Syntax: 
 #   [{remote_ip => port}, ... ]
-# [*customudprules*]
+# @param customudprules
 #   An array with rules that allow traffic to a specific UDP
 #   port from a specific address. Syntax:
 #   [{remote_ip => port}, ... ]
